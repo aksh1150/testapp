@@ -86,7 +86,7 @@ const ReviewAndConfirm = ({ state, prevPage, confirm, setConfirm }) => (
       </div>
       <div className="col-sm-12 text-center mt-5">
         <Button onClick={(event) => prevPage(event)} btnType="warning">
-          Preview
+          Previous
         </Button>
 
         <Button
