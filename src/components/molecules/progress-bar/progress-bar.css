@@ -1,0 +1,92 @@
+.steps-bar {
+  position: relative;
+  display: table;
+  margin: 20px 0;
+  table-layout: fixed;
+  height: 4px;
+  width: 100%;
+  background-color: #e4e4e4;
+  padding-left: 0px;
+}
+.steps-bar .step-item {
+  display: table-cell;
+  position: relative;
+  width: 2%;
+  text-align: center;
+  height: 4px;
+}
+.steps-bar .step-item::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 100%;
+}
+.steps-bar .step-item::after {
+  content: attr(step-name);
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.steps-bar .step-item > div {
+  position: absolute;
+  top: -20px;
+  margin-left: -24px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 50%;
+  line-height: 45px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+}
+.steps-bar .step-item.wait::before {
+  width: 100%;
+  background-color: #1946b4;
+}
+.steps-bar .step-item.wait > div {
+  background-color: #1946b4;
+}
+.steps-bar .step-item.wait > div i::before {
+  content: "\f0c3";
+}
+.steps-bar .step-item.success::before {
+  width: 100%;
+  background-color: #00c3a7;
+}
+.steps-bar .step-item.success > div {
+  background-color: #00c3a7;
+}
+.steps-bar .step-item.success > div i::before {
+  content: "\f00c";
+}
+.steps-bar .step-item.fail::before {
+  width: 50%;
+  background-color: #c6171b;
+}
+.steps-bar .step-item.fail > div {
+  background-color: #c6171b;
+}
+.steps-bar .step-item.fail > div i::before {
+  content: "\f05e";
+}
+.steps-bar .step-item.empty::before {
+  width: 0%;
+  background-color: #e4e4e4;
+}
+.steps-bar .step-item.empty > div {
+  background-color: #e4e4e4;
+}
+.steps-bar .step-item.empty > div i::before {
+  content: "\f017";
+}
+.custom-container {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding-bottom: 20px;
+}

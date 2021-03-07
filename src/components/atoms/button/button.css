@@ -1,0 +1,8 @@
+.btn {
+  width: 180px;
+  border-radius: 0px !important;
+  margin: 15px;
+}
+.btn-primary {
+  background-color: #1846b3 !important;
+}
