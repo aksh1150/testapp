@@ -32,13 +32,13 @@
 
 [NOTE:] Props are validated in each component using `PropTypes`.
 
-## `data` directory: This is application data which we use for render some component. such as `progress-bar` component use array of data to render it on the screen so we add those data here in this directory in `ProgressBar.js` file.
+### `data` directory: This is application data which we use for render some component. such as `progress-bar` component use array of data to render it on the screen so we add those data here in this directory in `ProgressBar.js` file.
 
-## `hooks` directory: When I create a new `hooks` I stored them in this directory. The new custom hook `useVisualMode` is created in this dir of `useVisualMode.js` file. This hook use to make transaction of wizard.
+### `hooks` directory: When I create a new `hooks` I stored them in this directory. The new custom hook `useVisualMode` is created in this dir of `useVisualMode.js` file. This hook use to make transaction of wizard.
 
-## `images` directory: This dir store images of the application.
+### `images` directory: This dir store images of the application.
 
-## `utils` directory: This directory store `utils` or `helper` functions which helps to run our application smooth. I created number of utils functions here to run our application. Those are:
+### `utils` directory: This directory store `utils` or `helper` functions which helps to run our application smooth. I created number of utils functions here to run our application. Those are:
 
 - `labelPrint` [shipping-label-print.js]: Using this function user can `print` their shipping labels.
 - `shippingRate` [shipping-rate.js]: This function calculate shipping cost based on entered `weight` and selected `shipping option`.
