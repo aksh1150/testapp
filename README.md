@@ -1,4 +1,4 @@
-# About the `SHIPPING-LABEL-MAKER` project
+# About the `SHIPPING-LABEL-MAKER` project te
 
 ** About the app **
 
